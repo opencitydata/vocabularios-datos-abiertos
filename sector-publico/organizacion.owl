@@ -1,0 +1,439 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+<!ENTITY dct "http://purl.org/dc/terms/" >
+<!ENTITY org "http://www.w3.org/ns/org#" >
+<!ENTITY vann "http://purl.org/vocab/vann/" >
+<!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+<!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+<!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+<!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+<!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+<!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+<!ENTITY orges "http://datos.gob.es/def/sector-publico/organizacion#" >
+<!ENTITY esadm "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#" >
+]>
+
+
+<rdf:RDF xmlns="http://datos.gob.es/def/sector-publico/organizacion#"
+     xml:base="http://datos.gob.es/def/sector-publico/organizacion"
+     xmlns:orges="http://datos.gob.es/def/sector-publico/organizacion#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns:foaf="http://xmlns.com/foaf/0.1/">
+	<owl:Ontology rdf:about="http://datos.gob.es/def/sector-publico/organizacion#">
+		<dct:issued>2015-02-19</dct:issued>
+		<dc:creator>everis</dc:creator>
+		<vann:preferredNamespacePrefix>orges</vann:preferredNamespacePrefix>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>IbaPasAn@jcyl.es</foaf:mbox>
+				<foaf:name>Antonio Ibáñez</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>mjferuiz@zaragoza.es</foaf:mbox>
+				<foaf:name>María Jesús Fernández</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>dreyjor@admon.upo.es</foaf:mbox>
+				<foaf:name>David Rey Jordán</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>soyjosem@hotmail.com</foaf:mbox>
+				<foaf:name>José M. Subero</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>ocorcho@fi.upm.es</foaf:mbox>
+				<foaf:name>Óscar Corcho</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>i-argueso@ej-gv.es</foaf:mbox>
+				<foaf:name>Imanol Argüeso</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>josemanuel.crespo@fundacionctic.org</foaf:mbox>
+				<foaf:name>José Manuel Crespo</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>martin@w3.org</foaf:mbox>
+				<foaf:name>Martín Álvarez</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>c.jimenez@estratic.com</foaf:mbox>
+				<foaf:name>Carlos Jimenez</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>mdolores.hernandez@seap.minhap.es</foaf:mbox>
+				<foaf:name>Mª Dolores Hernández</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:mbox>asun@fi.upm.es</foaf:mbox>
+				<foaf:name>Asuncion Gomez-Perez</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<dc:contributor>
+			<rdf:Description>
+				<foaf:name>Toño Velasco</foaf:name>
+			</rdf:Description>
+		</dc:contributor>
+		<vann:preferredNamespaceUri>http://datos.gob.es/def/sector-publico/organizacion#</vann:preferredNamespaceUri>
+		<dct:date>2015-02-19</dct:date>
+		<dc:rights>Creative Commons 3.0 (BY-NC-SA)</dc:rights>
+		<rdfs:comment xml:lang="es">Extensión de la ontología de Organizaciones para adecuarla al Directorio Común de entidades públicas en España.</rdfs:comment>
+		<dc:title xml:lang="es">Ontología sobre organizaciones públicas en España</dc:title>
+		<dct:hasFormat rdf:resource="http://datos.gob.es/def/sector-publico/organizacion.html"/>
+		<dct:hasFormat rdf:resource="http://datos.gob.es/def/sector-publico/organizacion.rdf"/>
+		<owl:versionIRI rdf:resource="&orges;1.0.0"/>
+		<owl:imports rdf:resource="http://purl.org/vocab/vann/"/>
+		<owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio_v0.5"/>
+		<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
+		<owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+	</owl:Ontology>
+
+
+
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#ambitoCompetencias -->
+
+	<owl:ObjectProperty rdf:about="&orges;ambitoCompetencias">
+		<rdfs:label xml:lang="es">Ámbito de Competencias</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Ámbito territorial de ejercicio de competencias de una organización.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:range>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&esadm;Autonomia"/>
+					<rdf:Description rdf:about="&esadm;EntidadSingular"/>
+					<rdf:Description rdf:about="&esadm;Municipio"/>
+					<rdf:Description rdf:about="&esadm;Pais"/>
+					<rdf:Description rdf:about="&esadm;Provincia"/>
+					<owl:Class>
+						<owl:unionOf rdf:parseType="Collection">
+							<owl:Restriction>
+								<owl:onProperty rdf:resource="&skos;inScheme"/>
+								<owl:hasValue rdf:resource="http://datos.gob.es/kos/sector-publico/AmbitoTerritorialCompetencias"/>
+							</owl:Restriction>
+							<owl:Restriction>
+								<owl:onProperty rdf:resource="&skos;inScheme"/>
+								<owl:hasValue rdf:resource="http://datos.gob.es/kos/sector-publico/EntidadGeografica"/>
+							</owl:Restriction>
+						</owl:unionOf>
+					</owl:Class>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:range>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&orges;UnidadOrganicaNoRaiz"/>
+					<rdf:Description rdf:about="&org;FormalOrganization"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#estado -->
+
+	<owl:ObjectProperty rdf:about="&orges;estado">
+		<rdfs:label xml:lang="es">Estado</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Estatus o situación jurídico/funcional de una organización.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:domain rdf:resource="&org;Organization"/>
+		<rdfs:range>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&skos;inScheme"/>
+				<owl:hasValue rdf:resource="http://datos.gob.es/kos/sector-publico/Estado"/>
+			</owl:Restriction>
+		</rdfs:range>
+	</owl:ObjectProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#nivelAdministracion -->
+
+	<owl:ObjectProperty rdf:about="&orges;nivelAdministracion">
+		<rdfs:label xml:lang="es">Nivel de Administración</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Nivel territorial de administración al que pertenece la organización, según el artículo 2.1 de la Ley 30/1992.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:domain rdf:resource="&org;Organization"/>
+		<rdfs:range>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&skos;inScheme"/>
+				<owl:hasValue rdf:resource="http://datos.gob.es/kos/sector-publico/NivelAdministracion"/>
+			</owl:Restriction>
+		</rdfs:range>
+	</owl:ObjectProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#servicio -->
+
+	<owl:ObjectProperty rdf:about="&orges;servicio">
+		<rdfs:label xml:lang="es">Servicio</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Servicios que puede prestar una determinada oficina.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:domain rdf:resource="&orges;Oficina"/>
+		<rdfs:range>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="&skos;inScheme"/>
+				<owl:hasValue rdf:resource="http://datos.gob.es/kos/sector-publico/ServicioOficina"/>
+			</owl:Restriction>
+		</rdfs:range>
+	</owl:ObjectProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#tieneUORaiz -->
+
+	<owl:ObjectProperty rdf:about="&orges;tieneUORaiz">
+		<rdfs:label xml:lang="es">Tiene Unidad Orgánica Raíz</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Organización, al nivel máximo de jerarquía de que depende otra organización.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:range rdf:resource="&org;FormalOrganization"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&orges;UnidadOrganicaNoRaiz"/>
+					<rdf:Description rdf:about="&org;FormalOrganization"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:ObjectProperty>
+
+
+
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#diasInhabiles -->
+
+	<owl:DatatypeProperty rdf:about="&orges;diasInhabiles">
+		<rdfs:label xml:lang="es">Días Inhábiles</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Designa los días inhábiles.
+Los días inhábiles se tratan como una frase en lenguaje natural. Ejemplo: «Domingos y festivos de ámbito nacional, autonómico o local.».</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:domain rdf:resource="&orges;Oficina"/>
+		<rdfs:range rdf:resource="&rdfs;Literal"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#disposicionLegal -->
+
+	<owl:DatatypeProperty rdf:about="&orges;disposicionLegal">
+		<rdfs:label xml:lang="es">Disposición Legal</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Identificación de la Disposición Legal que regula las competencias de la organización.
+Ejemplo: En el caso del BOE se haría referencia al RD de creación del Organismo como Agencia Estatal: «REAL DECRETO 1495/2007 por el que se crea la Agencia Estatal Boletín Oficial del Estado y se aprueba su estatuto».</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:range rdf:resource="&rdfs;Literal"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&orges;UnidadOrganicaNoRaiz"/>
+					<rdf:Description rdf:about="&org;FormalOrganization"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#horarioAtencion -->
+
+	<owl:DatatypeProperty rdf:about="&orges;horarioAtencion">
+		<rdfs:label xml:lang="es">Horario de Atención</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Define el horario de atención al ciudadano de la organización.
+El horario de atención se trata como una frase en lenguaje natural. Ejemplo: «Horario: De lunes a viernes de 8:30 a 14:30h. y de 16:10 a 18:30h. Sábados de 9:10 a 13:30. Horario de verano: … ».</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:domain rdf:resource="&orges;Oficina"/>
+		<rdfs:range rdf:resource="&rdfs;Literal"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#identificadorExterno -->
+
+	<owl:DatatypeProperty rdf:about="&orges;identificadorExterno">
+		<rdfs:label xml:lang="es">IdentificadorExterno</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Código externo que designa una organización según la codificación propia de la fuente de provisión.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:subPropertyOf rdf:resource="&dct;identifier"/>
+		<rdfs:range rdf:resource="&rdfs;Literal"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&orges;UnidadOrganicaNoRaiz"/>
+					<rdf:Description rdf:about="&org;FormalOrganization"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#nivelJerarquico -->
+
+	<owl:DatatypeProperty rdf:about="&orges;nivelJerarquico">
+		<rdfs:label xml:lang="es">Nivel Jerárquico</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Secuencial que identifica el nivel jerárquico relativo de la organización dentro de la entidad a la que pertenece.
+Para la raíz de un nivel de administración, este campo deberá ser 0. Para la unidad principal (de máximo nivel) de cualquier Ministerio, Comunidad Autónoma o Entidad Local el campo tomará el valor 1. Más allá de esto, el número se irá incrementando según convenga.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:range rdf:resource="&xsd;integer"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&orges;UnidadOrganicaNoRaiz"/>
+					<rdf:Description rdf:about="&org;FormalOrganization"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#observacionBaja -->
+
+	<owl:DatatypeProperty rdf:about="&orges;observacionBaja">
+		<rdfs:label xml:lang="es">Observación de Baja</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Observaciones relacionadas con la baja de la organización.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+		<rdfs:range rdf:resource="&rdfs;Literal"/>
+		<rdfs:domain>
+			<owl:Class>
+				<owl:unionOf rdf:parseType="Collection">
+					<rdf:Description rdf:about="&orges;UnidadOrganicaNoRaiz"/>
+					<rdf:Description rdf:about="&org;FormalOrganization"/>
+				</owl:unionOf>
+			</owl:Class>
+		</rdfs:domain>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#otroContacto -->
+
+	<owl:DatatypeProperty rdf:about="&orges;otroContacto">
+		<rdfs:label xml:lang="es">Otro Contacto</rdfs:label>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Cualquier dato de contacto adicional que no se encuentre definido en el DIR3.</rdfs:comment>
+		<rdfs:isDefinedBy rdf:resource="http://datos.gob.es/def/sector-publico/organizacion#"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#EntidadDerechoPublico -->
+
+	<owl:Class rdf:about="&orges;EntidadDerechoPublico">
+		<rdfs:label xml:lang="es">Entidad de Derecho Público</rdfs:label>
+		<rdfs:subClassOf rdf:resource="&orges;UnidadOrganicaNoRaiz"/>
+		<rdfs:subClassOf rdf:resource="&org;FormalOrganization"/>
+		<dct:issued>2015-19-02</dct:issued>
+		<rdfs:comment xml:lang="es">Organismo creado para satisfacer necesidades de interés general, excluidos los de carácter mercantil o industrial; que tenga personalidad jurídica; que su actividad se financie mayoritariamente con fondos públicos o que su gestión esté sometida al control público o bien que más de la mitad de los miembros de su órgano de administración, de dirección o vigilancia, sean nombrados por el sector público.
+Morales, F. J. (2007). La Contratación del Sector Público. Recuperado el 17 de febrero de 2015, de https://books.google.es/books?id=RozAMdGDMDIC&amp;pg=PA1&amp;lpg=PA1&amp;dq=la+contratación+del+sector+publico+f.+javier+escrihuela</rdfs:comment>
+	</owl:Class>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#Oficina -->
+
+	<owl:Class rdf:about="&orges;Oficina">
+		<rdfs:label xml:lang="es">Oficina</rdfs:label>
+		<rdfs:subClassOf rdf:resource="&org;OrganizationalUnit"/>
+		<dct:issued>2015-19-02</dct:issued>
+		<rdfs:comment xml:lang="es">Oficina de registro, información o tramitación que las distintas Administraciones Públicas ponen a disposición del Ciudadano.</rdfs:comment>
+	</owl:Class>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#UnidadNoOrganica -->
+
+	<owl:Class rdf:about="&orges;UnidadNoOrganica">
+		<rdfs:label xml:lang="es">Unidad No Orgánica</rdfs:label>
+		<rdfs:subClassOf rdf:resource="&org;OrganizationalUnit"/>
+		<dct:issued>2015-02-19</dct:issued>
+		<rdfs:comment xml:lang="es">Las Unidades No Orgánicas son las unidades de rango inferior o independiente que queden excluidas del ámbito de una «org:FormalUnit».</rdfs:comment>
+	</owl:Class>
+
+
+
+	<!-- http://datos.gob.es/def/sector-publico/organizacion#UnidadOrganicaNoRaiz -->
+
+	<owl:Class rdf:about="&orges;UnidadOrganicaNoRaiz">
+		<rdfs:label xml:lang="es">Unidad Orgánica No Raíz</rdfs:label>
+		<rdfs:subClassOf rdf:resource="&org;OrganizationalUnit"/>
+		<dct:issued>2015-19-02</dct:issued>
+		<rdfs:comment xml:lang="es">Unidad Orgánica con un nivel jerárquico mayor a 1, que depende de una Unidad Orgánica Raíz.</rdfs:comment>
+	</owl:Class>
+</rdf:RDF>
+
