@@ -1,0 +1,16 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<null> a prov:Entity;
+	 dc:title "Vocabulario para la representación de alojamientos";
+	 prov:wasAttributedTo <http://www.linkedin.com/in/ocorcho>;
+	 dc:creator <http://www.linkedin.com/in/ocorcho>;
+	 prov:wasAttributedTo <http://www.localidata.com/>;
+	 dc:contributor <http://www.localidata.com/>;
+	 prov:wasAttributedTo <http://www.oeg-upm.net/>;
+	 dc:contributor <http://www.oeg-upm.net/>;
+	 prov:wasAttributedTo <http://www.zaragoza.es/>;
+	 dc:contributor <http://www.zaragoza.es/>;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento/0.1>;
+	 prov:wasGeneratedAt "06 Marzo 2015".

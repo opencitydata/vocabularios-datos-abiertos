@@ -1,0 +1,72 @@
+<h2>3. Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>La siguiente figura muestra la clase <a href="#Alojamiento" title="http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#Alojamiento">esaloj:Alojamiento</a>, definida en este vocabulario, así como sus subclases <a href="#Hotel" title="http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#Hotel">esaloj:Hotel</a>, <a href="#Hostal" title="http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#Hostal">esaloj:Hostal</a>, <a href="#Albergue" title="http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#Albergue">esaloj:Albergue</a>, <a href="#Apartahotel" title="http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#Apartahotel">esaloj:Apartahotel</a>, etc., y las relaciones de estas clases con la taxonomía de clases de las ontologías de GeoNames, schema.org y la ontología Cruzar.</p>
+<center><img src="./images/diagramaClases.png"></center>
+<p>Y en la siguiente figura se muestran las propiedades definidas en este vocabulario, esaloj:numHabitaciones y esaloj:numCamas, que permiten describir el número de habitaciones y camas de un alojamiento, y esaloj:categoria, que permite hacer referencia a la categoría del alojamiento del que se trata (número de estrellas, número de llaves, etc.), definido en alguna clasificación SKOS, que no se ha determinado aún. Asimismo hemos incluido en la imagen algunas de las propiedades que son relevantes para alojamientos, y que proceden de otras ontologías:</p>
+<ul>
+<li>vcard:hasAddress, schema:address y locn:address, para representar la dirección postal del alojamiento.</li>
+<li>geosparql:hasGeometry, geo:lat y geo:long, para representar las coordenadas geográficas del alojamiento.</li>
+<li>estur:tipoAccesibilidad, para representar información sobre accesibilidad del alojamiento.</li>    
+</ul>
+<p>También se pueden utilizar, y se recomienda utilizar, propiedades generales de Dublin Core (por ejemplo, dct:title y dct:identifier) y otras propiedades generales como rdfs:label, rdfs:comment, owl:sameAs, etc. </p>
+
+<center><img src="./images/diagramaPropiedades.png"></center>
+
+<h3>3.1 Ejemplos de uso<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+<p>A continuación mostramos algunos ejemplos del uso de algunas de estas clases y propiedades, con ejemplos procedentes del portal de datos abiertos de Zaragoza. Utilizaremos en todos estos ejemplos los formatos <a href="http://www.w3.org/TR/turtle/" target="_blank">Turtle<a> y <a href="http://www.w3.org/TR/json-ld/" target="_blank">JSON-LD</a>a></p>
+    <p>Veamos cómo podemos representar un hotel de Zaragoza (por ejemplo, el Hotel Delicias, cuya URI es <a href="http://www.zaragoza.es/api/recurso/turismo/alojamiento/1068" target="_blank">http://www.zaragoza.es/api/recurso/turismo/alojamiento/1068</a>). Como se puede ver, declaramos que es una instancia de nuestra clase <a href="#Alojamiento" title="http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#Alojamiento">esadm:ComunidadAutonoma</a>, que tiene como geonames:featureCode una referencia al recurso geonames:S.HTL y como geonames:featureClass una referencia al recurso geonames:S, y que tiene una serie de datos que parecen "repetidos", como su nombre común y nombre oficial. Esta "repetición" de los mismos valores con distintas propiedades es algo que permite facilitar el acceso a nuestros datos a aplicaciones que utilizan unos u otros vocabularios.</p>
+    
+    <pre>
+      &lt;http://www.zaragoza.es/api/recurso/turismo/alojamiento/1068&gt;
+           a                       esaloj:Alojamiento  ;
+           rdfs:label              "HOTEL DELICIAS";
+           rdfs:comment            "Parking concertado.";
+           dct:identifier          "1068" ;
+           dct:description         "C/ Sangenis, 13 &lt;strong&gt;&lt;abbr title=\"Teléfono\"&gt;Tel.:&lt;/abbr&gt;&lt;/strong&gt; 976 31 00 77" ;
+           dct:modified            "2013-10-16T00:00:00Z" .
+           esaloj:numHabitaciones  40;
+           esaloj:numCamas         68;
+           esaloj:categoria        "Hotel 2 estrellas" ;
+           estur:tipoAccesibilidad "Accesible, Aparcamiento: no tiene plazas reservadas. Acceso: Entrada adaptada por Paseo Calanda, 28...";
+           schema:address          [schema:addressLocality "Zaragoza"; 
+                                    schema:streetAddress   "C/ Sangenis, 13";
+                                    schema:postalCode      "50010"];
+           schema:email            "reservas@hoteldeliciaszaragoza.com" ;
+           schema:faxNumber        "976 31 00 77" ;
+           schema:telephone        "976 31 00 77" ;
+           schema:url              "http://www.hoteldeliciaszaragoza.com";
+           geosparql:hasGeometry   [a               sf:Point;
+                                    geosparql:asWKT "&lt;http://www.opengis.net/def/crs/EPSG/0/23030&gt;Point(674618.38 4613507.74)"^^&lt;http://www.opengis.net/ont/geosparql#wktLiteral&gt; .]
+    </pre>
+    <pre>
+{
+  "@context": ["http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento.json",
+               "http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar.json",
+               {"schema":"http://schema.org/"},
+               "http://vocab.linkeddata.es/datosabiertos/def/external/geosparql.json"],
+  "@id": "http://www.zaragoza.es/api/recurso/turismo/alojamiento/1068",
+  "@type": "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#Alojamiento",
+  "identifier": 1068,
+  "title": "HOTEL DELICIAS",
+  "comment": "Parking concertado.",
+  "description": "C/ Sangenis, 13 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 31 00 77",
+  "schema:address": {"schema:streetAddress": "C/ Sangenis, 13",
+                     "schema:postalCode": "50010",
+                     "schema:addressLocality": "Zaragoza"},
+  "schema:telephone": "976 31 00 77",
+  "schema:faxNumber": "976 31 00 77",
+  "schema:email": "reservas@hoteldeliciaszaragoza.com",
+  "schema:url": "http://www.hoteldeliciaszaragoza.com",
+  "estur:tipoAccesibilidad": "Accesible, Aparcamiento: no tiene plazas reservadas. Acceso: Entrada adaptada por Paseo Calanda, 28...",
+  "categoria": "Hotel 2 estrellas",
+  "habitaciones": 40,
+  "camas": 68,
+  "geosparql:hasGeometry": {
+    "@id": "http://www.zaragoza.es/api/recurso/geometry/EPSG23030/674618.38_4613507.74",
+    "@type": "http://www.opengis.net/ont/sf#Point",
+    "geosparql:asWKT": "<http://www.opengis.net/def/crs/EPSG/0/23030>Point(674618.38 4613507.74)"
+  },
+  "lastUpdated": "2013-10-16T00:00:00Z",
+  "rdfs:seeAlso": "/ciudad/turismo/es/organiza-viaje/detalle_Alojamiento?id=1068&op=t"
+}
+    </pre>
+
