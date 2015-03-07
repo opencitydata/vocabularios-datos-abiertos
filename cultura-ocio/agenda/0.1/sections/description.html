@@ -1,0 +1,66 @@
+<h2>3. Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>La siguiente figura muestra el diagrama de clases de la ontología, donde se puede observar que el elemento central es la clase <a href="#Evento" title="http://vocab.linkeddata.es/datosabiertos/def/cultura-ocio/agenda#Evento">esagenda:Evento</a>, definida en este vocabulario</p>
+<center><img src="./images/diagramaClases.png"></center>
+<p>En la figura también se muestran todas las propiedades definidas en este vocabulario, para representar el lugar o equipamiento de la ciudad donde se celebrará el evento, el lugar de inscripción, las características de accesibilidad y medios de transporte para llegar, los tipos de público y de evento, y las fechas y horas de inicio y fin de las actividades. También se muestran las propiedades que se pueden utilizar de otros vocabularios importados, como la Event ontology y schema.org/Event</p>
+<p>También se pueden utilizar, y se recomienda utilizar, propiedades generales de Dublin Core (por ejemplo, dct:title y dct:identifier) y otras propiedades generales como rdfs:label, rdfs:comment, owl:sameAs, etc. </p>
+
+<h3>3.1 Ejemplos de uso<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+<p>A continuación mostramos algunos ejemplos del uso de algunas de estas clases y propiedades, con ejemplos procedentes del portal de datos abiertos de Zaragoza. Utilizaremos en todos estos ejemplos los formatos <a href="http://www.w3.org/TR/turtle/" target="_blank">Turtle<a> y <a href="http://www.w3.org/TR/json-ld/" target="_blank">JSON-LD</a></p>
+
+Se introducirán ejemplos concretos. De momento, se pueden observar datos de este tipo en <a href="http://www.zaragoza.es/api/recurso/cultura-ocio/evento-zaragoza/76958" target="_blank">http://www.zaragoza.es/api/recurso/cultura-ocio/evento-zaragoza/76958</a>.
+<!--    
+    <pre>
+      &lt;http://www.zaragoza.es/api/recurso/turismo/alojamiento/1068&gt;
+           a                       esaloj:Alojamiento  ;
+           rdfs:label              "HOTEL DELICIAS";
+           rdfs:comment            "Parking concertado.";
+           dct:identifier          "1068" ;
+           dct:description         "C/ Sangenis, 13 &lt;strong&gt;&lt;abbr title=\"Teléfono\"&gt;Tel.:&lt;/abbr&gt;&lt;/strong&gt; 976 31 00 77" ;
+           dct:modified            "2013-10-16T00:00:00Z" .
+           esaloj:numHabitaciones  40;
+           esaloj:numCamas         68;
+           esaloj:categoria        "Hotel 2 estrellas" ;
+           estur:tipoAccesibilidad "Accesible, Aparcamiento: no tiene plazas reservadas. Acceso: Entrada adaptada por Paseo Calanda, 28...";
+           schema:address          [schema:addressLocality "Zaragoza"; 
+                                    schema:streetAddress   "C/ Sangenis, 13";
+                                    schema:postalCode      "50010"];
+           schema:email            "reservas@hoteldeliciaszaragoza.com" ;
+           schema:faxNumber        "976 31 00 77" ;
+           schema:telephone        "976 31 00 77" ;
+           schema:url              "http://www.hoteldeliciaszaragoza.com";
+           geosparql:hasGeometry   [a               sf:Point;
+                                    geosparql:asWKT "&lt;http://www.opengis.net/def/crs/EPSG/0/23030&gt;Point(674618.38 4613507.74)"^^&lt;http://www.opengis.net/ont/geosparql#wktLiteral&gt; .]
+    </pre>
+    <pre>
+{
+  "@context": ["http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento.json",
+               "http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar.json",
+               {"schema":"http://schema.org/"},
+               "http://vocab.linkeddata.es/datosabiertos/def/external/geosparql.json"],
+  "@id": "http://www.zaragoza.es/api/recurso/turismo/alojamiento/1068",
+  "@type": "http://vocab.linkeddata.es/datosabiertos/def/turismo/alojamiento#Alojamiento",
+  "identifier": 1068,
+  "title": "HOTEL DELICIAS",
+  "comment": "Parking concertado.",
+  "description": "C/ Sangenis, 13 <strong><abbr title=\"Teléfono\">Tel.:</abbr></strong> 976 31 00 77",
+  "schema:address": {"schema:streetAddress": "C/ Sangenis, 13",
+                     "schema:postalCode": "50010",
+                     "schema:addressLocality": "Zaragoza"},
+  "schema:telephone": "976 31 00 77",
+  "schema:faxNumber": "976 31 00 77",
+  "schema:email": "reservas@hoteldeliciaszaragoza.com",
+  "schema:url": "http://www.hoteldeliciaszaragoza.com",
+  "estur:tipoAccesibilidad": "Accesible, Aparcamiento: no tiene plazas reservadas. Acceso: Entrada adaptada por Paseo Calanda, 28...",
+  "categoria": "Hotel 2 estrellas",
+  "habitaciones": 40,
+  "camas": 68,
+  "geosparql:hasGeometry": {
+    "@id": "http://www.zaragoza.es/api/recurso/geometry/EPSG23030/674618.38_4613507.74",
+    "@type": "http://www.opengis.net/ont/sf#Point",
+    "geosparql:asWKT": "<http://www.opengis.net/def/crs/EPSG/0/23030>Point(674618.38 4613507.74)"
+  },
+  "lastUpdated": "2013-10-16T00:00:00Z",
+  "rdfs:seeAlso": "/ciudad/turismo/es/organiza-viaje/detalle_Alojamiento?id=1068&op=t"
+}
+    </pre>
+-->
