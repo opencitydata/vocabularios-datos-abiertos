@@ -1,0 +1,15 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<null> a prov:Entity;
+	 dc:title "Vocabulario para la representación de lugares, zonas e itinerarios de interés turístico";
+	 prov:wasAttributedTo <http://www.linkedin.com/in/ocorcho>;
+	 dc:creator <http://www.linkedin.com/in/ocorcho>;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Antonio Ibáñez".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Calixto Mellén".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "José Luis Cano".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "José Ignacio Sánchez".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name " Sonia Castro".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar/0.1>;
+	 prov:wasGeneratedAt "13 Marzo 2015".

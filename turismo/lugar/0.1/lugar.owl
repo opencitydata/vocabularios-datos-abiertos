@@ -1,0 +1,550 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY org "http://www.w3.org/ns/org#" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY dbpedia-owl "http://dbpedia.org/ontology/" >
+    <!ENTITY dctype "http://purl.org/dc/dcmitype/" >
+    <!ENTITY geonames "http://geonames.org/ontology#" >
+    <!ENTITY cc "http://creativecommons.org/ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY zaragozakos "http://www.zaragoza.es/api/kos/" >
+    <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY geosparql "http://www.opengis.net/ont/geosparql#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY kosTurismo "http://vocab.linkeddata.es/datosabiertos/kos/turismo/" >
+    <!ENTITY estur "http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#" >
+    <!ENTITY esadm "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#" >
+]>
+
+
+<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#"
+     xml:base="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+     xmlns:estur="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:owl2="http://www.w3.org/2006/12/owl2#"
+     xmlns:geonames="http://geonames.org/ontology#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/"
+     xmlns:kosTurismo="http://vocab.linkeddata.es/datosabiertos/kos/turismo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:cc="http://creativecommons.org/ns#"
+     xmlns:zaragozakos="http://www.zaragoza.es/api/kos/">
+    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar">
+        <dc:date rdf:datatype="&xsd;dateTime">2014-06-25</dc:date>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <dc:creator>José Ignacio Sánchez (red.es)</dc:creator>
+        <dc:creator>Calixto Mellen (SEGITTUR)</dc:creator>
+        <dc:creator>Antonio Ibáñez (Junta de Castilla y León)</dc:creator>
+        <rdfs:comment>Vocabulario para la representación de datos de lugares de interés turístico, viajes, rutas, etc., en España
+Este vocabulario ha sido desarrollado en el contexto del grupo sobre Turismo, Cultura y Ocio, y Comercio de AENOR. El estado del vocabulario es todavía muy inicial y sufrirá cambios
+Reutiliza términos de varios vocabularios y modelos que actualmente se utilizan para propósitos similares (y por tanto se irá actualizando de acuerdo con la evolución de estos vocabularios), incluyendo:
+- schema.org
+- geoNames
+
+Esta ontología sufrirá cambios continuados hasta que se consiga un acuerdo suficiente sobre los términos que se incluyen en ella. </rdfs:comment>
+        <dc:creator>José Luis Cano (Ayuntamiento de Madrid)</dc:creator>
+        <dc:identifier>http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar</dc:identifier>
+        <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
+        <dc:creator>Sonia Castro (red.es)</dc:creator>
+        <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)</dc:creator>
+        <owl:versionInfo xml:lang="es">Esta es la versión inicial de la ontología que surge del trabajo del grupo de expertos dedicados al área de turismo en el contexto del grupo de AENOR</owl:versionInfo>
+        <dc:title xml:lang="es">Vocabulario para la representación de datos sobre lugares de interés turístico, rutas, viajes, etc.</dc:title>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar.html"/>
+        <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar.owl"/>
+        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#"/>
+        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar/0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;issued"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geonames.org/ontology#featureClass -->
+
+    <owl:ObjectProperty rdf:about="&geonames;featureClass">
+        <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://geonames.org/ontology#featureCode -->
+
+    <owl:ObjectProperty rdf:about="&geonames;featureCode">
+        <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:ObjectProperty rdf:about="&dcterms;type"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#areaInfluencia -->
+
+    <owl:ObjectProperty rdf:about="&estur;areaInfluencia">
+        <rdfs:label xml:lang="es">área de influencia</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">área de influencia de un lugar, zona de interés turístico o itinerario</rdfs:comment>
+        <rdfs:range rdf:resource="&geonames;Feature"/>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#medioTransporte -->
+
+    <owl:ObjectProperty rdf:about="&estur;medioTransporte">
+        <rdfs:label xml:lang="es">medio de transporte</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Medio de transporte que se puede utilizar para acceder al lugar, zona o itinerario de interés turístico</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#tipoAccesibilidad -->
+
+    <owl:ObjectProperty rdf:about="&estur;tipoAccesibilidad">
+        <rdfs:label xml:lang="es">tipo de accesibilidad</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Propiedad que representa el tipo de accesibilidad del lugar, zona o itinerario. Generalmente, se tratará de un término definido en algún SKOS</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#tipoEdificioHistorico -->
+
+    <owl:ObjectProperty rdf:about="&estur;tipoEdificioHistorico">
+        <rdfs:label xml:lang="es">tipo de edificio histórico</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-09-15</dcterms:issued>
+        <rdfs:comment xml:lang="es">tipo de edificio histórico, que puede ser un conjunto histórico artístico, o un edificio singular.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&skos;Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&skos;inScheme"/>
+                        <owl:hasValue rdf:resource="&kosTurismo;tipoEdificioHistorico"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#tipoInstitucion -->
+
+    <owl:ObjectProperty rdf:about="&estur;tipoInstitucion">
+        <rdfs:label xml:lang="es">tipo de institución</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-09-15</dcterms:issued>
+        <rdfs:comment xml:lang="es">tipo de institución a la que pertenece un lugar turístico (empresa, administración pública, fundación, entidad religiosa, etc.)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#tipoLugarTuristico -->
+
+    <owl:ObjectProperty rdf:about="&estur;tipoLugarTuristico">
+        <rdfs:label xml:lang="es">tipo de lugar, zona o itinerario de interés turístico</rdfs:label>
+        <dcterms:issued>2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Tipo de lugar, zona o itinerario de interés turístico, de acuerdo con alguna clasificación SKOS</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:ObjectProperty rdf:about="&skos;inScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#accesible -->
+
+    <owl:DatatypeProperty rdf:about="&estur;accesible">
+        <rdfs:label xml:lang="es">accesible</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Propiedad que representa si el lugar de interés turístico está en un lugar accesible o no</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#afluenciaPublico -->
+
+    <owl:DatatypeProperty rdf:about="&estur;afluenciaPublico">
+        <rdfs:label xml:lang="es">afluencia de público</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">afluencia de público en un lugar o zona de interés turístico. De momento se sugiere representar esta información mediante una cadena de caracteres, con valores como bajo, medio o alto, aunque probablemente se utilice finalmente una clasificación SKOS desarrollada al efecto.</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#costeMantenimiento -->
+
+    <owl:DatatypeProperty rdf:about="&estur;costeMantenimiento">
+        <rdfs:label xml:lang="es">coste de mantenimiento</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">coste de mantenimiento asociado al lugar o zona de interés cultural</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#estiloArtistico -->
+
+    <owl:DatatypeProperty rdf:about="&estur;estiloArtistico">
+        <rdfs:label xml:lang="es">estilo artístico</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Estilo artístico del lugar o zona de interés turístico. De momento se sugiere codificarlo mediante una cadena de caracteres. En el futuro podría tratarse de una clasificación SKOS</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#fechaDeclaraciónBienCultural -->
+
+    <owl:DatatypeProperty rdf:about="&estur;fechaDeclaraciónBienCultural">
+        <rdfs:label xml:lang="es">fecha de declaración como bien de interés cultural</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Fecha en la que el lugar o zona fue declarado bien de interés cultural</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#ingresosObtenidos -->
+
+    <owl:DatatypeProperty rdf:about="&estur;ingresosObtenidos">
+        <rdfs:label xml:lang="es">ingresos obtenidos</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">ingresos obtenidos en el lugar o zona de interés turístico</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#modoAcceso -->
+
+    <owl:DatatypeProperty rdf:about="&estur;modoAcceso">
+        <rdfs:label xml:lang="es">modo de acceso</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-09-15</dcterms:issued>
+        <rdfs:comment xml:lang="es">descripción sobre la forma de acceder al lugar turístico</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#notaHistorica -->
+
+    <owl:DatatypeProperty rdf:about="&estur;notaHistorica">
+        <rdfs:label xml:lang="es">nota histórica</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-09-15</dcterms:issued>
+        <rdfs:comment xml:lang="es">detalle sobre la historia del lugar</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#siglo -->
+
+    <owl:DatatypeProperty rdf:about="&estur;siglo">
+        <rdfs:label>siglo</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment>siglo al que pertenece el lugar o zona de interés turístico</rdfs:comment>
+        <rdfs:domain rdf:resource="&schema;TouristAttraction"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geonames.org/ontology#Feature -->
+
+    <owl:Class rdf:about="&geonames;Feature"/>
+    
+
+
+    <!-- http://schema.org/TouristAttraction -->
+
+    <owl:Class rdf:about="&schema;TouristAttraction"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#EdificioHistorico -->
+
+    <owl:Class rdf:about="&estur;EdificioHistorico">
+        <rdfs:label xml:lang="es">Edificio histórico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
+        <rdfs:subClassOf rdf:resource="&estur;LugarInteresTuristico"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&geonames;featureClass"/>
+                <owl:hasValue rdf:resource="&geonames;S"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&geonames;featureCode"/>
+                <owl:hasValue rdf:resource="&geonames;S.BLDG"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-09-15</dcterms:issued>
+        <rdfs:comment xml:lang="es">Edificio histórico, que puede ser un único edificio o un conjunto histórico</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#Itinerario -->
+
+    <owl:Class rdf:about="&estur;Itinerario">
+        <rdfs:label xml:lang="es">Itinerario</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
+        <rdfs:subClassOf rdf:resource="&schema;TouristAttraction"/>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Itinerario o ruta, que puede ser turístico, de ocio, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#LugarInteresTuristico -->
+
+    <owl:Class rdf:about="&estur;LugarInteresTuristico">
+        <rdfs:label xml:lang="es">Lugar de Interés Turístico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
+        <rdfs:subClassOf rdf:resource="&schema;TouristAttraction"/>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Lugar que puede tener algún tipo de interés turístico. Incluye rutas, viajes, etc.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#Monumento -->
+
+    <owl:Class rdf:about="&estur;Monumento">
+        <rdfs:label xml:lang="es">Monumento</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
+        <rdfs:subClassOf rdf:resource="&estur;LugarInteresTuristico"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&geonames;featureClass"/>
+                <owl:hasValue rdf:resource="&geonames;S"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&geonames;featureCode"/>
+                <owl:hasValue rdf:resource="&geonames;S.MNMT"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-07-20</dcterms:issued>
+        <rdfs:comment xml:lang="es">Monumento</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#PiezaArteUrbano -->
+
+    <owl:Class rdf:about="&estur;PiezaArteUrbano">
+        <rdfs:label xml:lang="es">Pieza de arte urbano</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
+        <rdfs:subClassOf rdf:resource="&estur;LugarInteresTuristico"/>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-07-20</dcterms:issued>
+        <rdfs:comment xml:lang="es">Pieza de arte urbano</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar#ZonaTuristica -->
+
+    <owl:Class rdf:about="&estur;ZonaTuristica">
+        <rdfs:label xml:lang="es">Zona Turística</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
+        <rdfs:subClassOf rdf:resource="&schema;TouristAttraction"/>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2014-06-25</dcterms:issued>
+        <rdfs:comment xml:lang="es">Zona que puede tener algún tipo de interés turístico, y que normalmente incluirá un conjunto de lugares de interés turístico</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="&skos;ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geonames.org/ontology#S -->
+
+    <owl:Thing rdf:about="&geonames;S">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://geonames.org/ontology#S.BLDG -->
+
+    <owl:Thing rdf:about="&geonames;S.BLDG">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://geonames.org/ontology#S.MNMT -->
+
+    <owl:Thing rdf:about="&geonames;S.MNMT">
+        <rdf:type rdf:resource="&owl;NamedIndividual"/>
+    </owl:Thing>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/kos/turismo/tipoEdificioHistorico -->
+
+    <owl:NamedIndividual rdf:about="&kosTurismo;tipoEdificioHistorico">
+        <rdf:type rdf:resource="&skos;ConceptScheme"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:label>RDF</rdfs:label>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>HTML</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
