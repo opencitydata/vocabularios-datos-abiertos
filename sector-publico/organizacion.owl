@@ -114,7 +114,7 @@
 		<dct:hasFormat rdf:resource="http://datos.gob.es/def/sector-publico/organizacion.rdf"/>
 		<owl:versionIRI rdf:resource="&orges;1.0.0"/>
 		<owl:imports rdf:resource="http://purl.org/vocab/vann/"/>
-		<owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio_v0.5"/>
+		<owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio"/>
 		<owl:imports rdf:resource="http://www.w3.org/2004/02/skos/core"/>
 		<owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
 	</owl:Ontology>
