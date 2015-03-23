@@ -1,0 +1,35 @@
+{
+  "@context": {
+      "essubv":"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/subvencion#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "schema": "http://schema.org/",
+      "dct": "http://purl.org/dc/terms/",
+      "adjudicatario":{
+          "@id":"essubv:adjudicatario",
+          "@type":"@id"
+      },
+      "area":{
+          "@id":"essubv:area",
+          "@type":"@id"
+      },
+      "servicio":{
+          "@id":"essubv:servicio",
+          "@type":"@id"
+      },
+      "entidadFinanciadora":{
+          "@id":"essubv:entidadFinanciadora",
+          "@type":"@id"
+      },
+      "fechaAdjudicacion":{
+          "@id":"essubv:fechaAdjudicacion",
+          "@type":"xsd:date"
+      },
+      "lineaFinanciacion":{
+          "@id":"essubv:lineaFinanciacion"
+      },   
+      "importe":{
+          "@id":"essubv:importe",
+          "@type":"xsd:float"
+      }
+  }
+}
