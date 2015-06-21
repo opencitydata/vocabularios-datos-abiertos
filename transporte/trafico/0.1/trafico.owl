@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY schema "http://schema.org/" >
+    <!ENTITY dcterms "http://purl.org/dc/terms/" >
+    <!ENTITY vann "http://purl.org/vocab/vann/" >
+    <!ENTITY dbpedia-owl "http://dbpedia.org/ontology/" >
+    <!ENTITY dctype "http://purl.org/dc/dcmitype/" >
+    <!ENTITY geonames "http://geonames.org/ontology#" >
+    <!ENTITY cc "http://creativecommons.org/ns#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
+    <!ENTITY geosparql "http://www.opengis.net/ont/geosparql#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY esadm "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#" >
+    <!ENTITY escjr "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#" >
+]>
+
+
+<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#"
+     xml:base="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
+     xmlns:escjr="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:geonames="http://geonames.org/ontology#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/"
+     xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
+     xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dctype="http://purl.org/dc/dcmitype/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:cc="http://creativecommons.org/ns#">
+    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico">
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2015-06-21</dcterms:issued>
+        <dc:date rdf:datatype="&xsd;dateTime">2015-06-21</dc:date>
+        <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
+        <owl:versionInfo xml:lang="es">Esta ontología surge de la necesidad de representar información detallada sobre el tráfico en una ciudad</owl:versionInfo>
+        <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)</dc:creator>
+        <dc:title xml:lang="es">Vocabulario para la representación de datos sobre tráfico</dc:title>
+        <rdfs:comment xml:lang="es">Vocabulario para la representación de datos sobre tráfico. 
+Este vocabulario ha sido desarrollado en el contexto del grupo de trabajo sobre Transporte de AENOR. El estado del vocabulario es todavía muy inicial y sufrirá cambios.
+Reutiliza términos de un vocabulario que se encuentra en proceso de estandarización y que permite representar información sobre datos obtenidos a partir de redes de sensores: la W3C Semantic Sensor Network Ontology
+Esta ontología sufrirá cambios continuados hasta que se consiga un acuerdo suficiente sobre los términos que se incluyen en ella. </rdfs:comment>
+        <dc:identifier xml:lang="es">http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico</dc:identifier>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <owl:imports rdf:resource="http://purl.oclc.org/NET/ssnx/ssn"/>
+        <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico.html"/>
+        <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico.owl"/>
+        <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#"/>
+        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico/0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="&dcterms;issued"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#intensityType -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#intensityType">
+        <rdfs:label xml:lang="es">tipo de intensidad</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;date">2015-06-21</dcterms:issued>
+        <rdfs:comment xml:lang="es">Tipo de intensidad del tráfico. Normalmente se debería encontrar recogido en un SKOS Concept Scheme sobre categorías de intensidad de tráfico (por ejemplo, verde, amarillo, rojo). </rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico"/>
+        <rdfs:range rdf:resource="&skos;Concept"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensityObservation -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensityObservation">
+        <rdfs:label xml:lang="es">Observación sobre la intensidad del tráfico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficObservation"/>
+        <dcterms:issued rdf:datatype="&xsd;date">2015-06-21</dcterms:issued>
+        <rdfs:comment xml:lang="es">Observación relacionada con la intensidad del tráfico en un tramo de vía de una ciudad</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensityObservationValue -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensityObservationValue">
+        <rdfs:label xml:lang="es">Valor de intensidad de tráfico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#ObservationValue"/>
+        <dcterms:issued rdf:datatype="&xsd;date">2015-06-21</dcterms:issued>
+        <rdfs:comment xml:lang="es">Valor producido por un sensor o sistema de medición de la intensidad de tráfico de un tramo de vía</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensitySensor -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensitySensor">
+        <rdfs:label xml:lang="es">Sensor de intensidad de tráfico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Sensor"/>
+        <dcterms:issued rdf:datatype="&xsd;date">2015-06-21</dcterms:issued>
+        <rdfs:comment xml:lang="es">Sensor o sistema utilizado para medir la intensidad del tráfico en un tramo de vía</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensitySensorOutput -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensitySensorOutput">
+        <rdfs:label xml:lang="es">Medición de la intensidad del tráfico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#SensorOutput"/>
+        <dcterms:issued rdf:datatype="&xsd;date">2015-06-21</dcterms:issued>
+        <rdfs:comment xml:lang="es">Resultado de la observación de un sensor o sistema de medición de la intensidad del tráfico</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficObservation -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficObservation">
+        <rdfs:label xml:lang="es">Observación de tráfico</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Observation"/>
+        <dcterms:issued rdf:datatype="&xsd;date">2015-06-21</dcterms:issued>
+        <rdfs:comment xml:lang="es">Observación relacionada con el tráfico</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia -->
+
+    <owl:Class rdf:about="&escjr;TramoVia">
+        <rdfs:subClassOf rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#FeatureOfInterest"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="&skos;Concept"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://geonames.org/ontology#S -->
+
+    <owl:NamedIndividual rdf:about="&geonames;S">
+        <rdf:type rdf:resource="&skos;Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://geonames.org/ontology#S.HTL -->
+
+    <owl:NamedIndividual rdf:about="&geonames;S.HTL">
+        <rdf:type rdf:resource="&skos;Concept"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensity -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensity">
+        <rdf:type rdf:resource="http://purl.oclc.org/NET/ssnx/ssn#Property"/>
+        <rdfs:label xml:lang="es">Intensidad del tráfico</rdfs:label>
+        <dcterms:issued rdf:datatype="&xsd;dateTime">2015-06-21</dcterms:issued>
+        <rdfs:comment xml:lang="es">Propiedad utilizada para medir la intensidad del tráfico</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdfs:label>HTML</rdfs:label>
+    </rdf:Description>
+    <rdf:Description>
+        <rdfs:label>RDF</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

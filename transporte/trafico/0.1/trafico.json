@@ -1,0 +1,22 @@
+{
+  "@context": {
+      "estrf":"http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "escjr":"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#",
+      "estrf:intensityType":{
+          "@type":"@id"
+      },
+      "estrf:TrafficIntensityObservation":{
+          "@type":"@id"
+      },
+      "estrf:TrafficIntensitySensorOutput":{
+          "@type":"@id"
+      },
+      "estrf:TrafficIntensitySensor":{
+          "@type":"@id"
+      },
+      "estrf:TrafficIntensityObservationValue":{
+          "@type":"@id"
+      }
+  }
+}

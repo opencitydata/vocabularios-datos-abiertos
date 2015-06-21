@@ -1,0 +1,12 @@
+SELECT DISTINCT (?feature AS ?tramovial) ?intensidad (?time AS ?fecha) (?observedBy AS ?sensorIntensidadTrafico)
+WHERE {
+	?obs a estrf:TrafficIntensityObservation .
+	?obs ssn:observationResultTime ?time .
+	?obs ssn:observedBy ?observedBy .
+	?obs ssn:featureOfInterest ?feature .
+	?obs ssn:observationResult ?sensorOutput .
+	?sensorOutput ssn:hasValue ?obsValue .
+	?obsValue ttp:intensityType ?intensidad .
+	?obs ssn:observedProperty ?property .
+	FILTER(month(?time)=8 && year(?time)=2013)
+} LIMIT 100

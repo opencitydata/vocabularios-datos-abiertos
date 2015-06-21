@@ -1,0 +1,49 @@
+<h2>3. Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>En la siguiente figura se muestra cómo este vocabulario extiende la <a href="http://purl.oclc.org/NET/ssnx/ssn" target="_blank">W3C Semantic Sensor Network Ontology</a>. Se crean las siguientes clases:</p>
+<ul>
+    <li><a href="#TrafficIntensityObservation" title="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensityObservation">estrf:TrafficIntensityObservation</a>, que aglutina cada una de las observaciones que se ofrecen sobre el tráfico (en este caso, sobre intensidad de tráfico). Esta clase es subclase de una más general, <a href="#TrafficObservation" title="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficObservation">estrf:TrafficObservation</a>, que se puede extender con cualquier otra subclase para medir otros elementos del tráfico en el futuro.</li>
+    <li><a href="#TrafficIntensitySensorOutput" title="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensitySensorOutput">estrf:TrafficIntensitySensorOutput</a> y <a href="#TrafficIntensityObservationValue" title="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensityObservationValue">estrf:TrafficIntensityObservationValue</a>, que almacenan los resultados de la observación, es decir, la medición correspondiente sobre intensidad del tráfico.</li>
+    <li><a href="#TrafficIntensitySensor" title="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensitySensor">estrf:TrafficIntensitySensor</a> permite identificar el sensor o sistema que ha realizado la medición. En muchas ocasiones no será interesante proporcionar esta información, y por tanto no tiene por qué ofrecerse.</li>
+    <li><a href="#TrafficIntensity" title="http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico#TrafficIntensity">estrf:TrafficIntensity</a> es una instancia que representa el tipo de propiedad que se está midiendo.</li>
+    <li><a href="#TramoVia" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#TramoVia">escjr:TramoVia</a> se refiere al elemento que se está midiendo, que será un tramo de vía, según se define en el vocabulario de callejero.</li>
+</ul>
+<center><img src="./images/TrafficIntensityOntology.png"></center>
+
+
+<h3>3.1 Ejemplos de uso<span class="backlink"> back to <a href="#toc">ToC</a></span></h3>
+<p>A continuación se muestra un ejemplo de uso de este vocabulario. En primer lugar, se ofrece una imagen en la que se presenta un ejemplo de una medición de un tramo de vía, en una fecha y hora concretas, y a continuación se muestra este ejemplo en formato <a href="http://www.w3.org/TR/json-ld/" target="_blank">JSON-LD</a></p>
+    <center><img src="./images/TrafficIntensityExample.png"></center>
+    
+    <pre>
+ {
+    "@context": ["http://vocab.linkeddata.es/datosabiertos/def/external/ssn.json","http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico.json"],
+    "@id": "URI-observacion",
+    "@type": "estrf:TrafficIntensityObservation",
+    "dcterms:title": "Observación del tramo de vía XXXXX en Validación de tarjeta 111222333 en 2015-06-21T09:30:30+02:00",
+    "ssn:observedBy": {
+        "@id":"URI-sensor",
+        "@type":"estrf:TrafficIntensitySensor"
+    },
+    "ssn:observationResultTime": "2015-06-21T09:30:30+02:00",
+    "ssn:observedProperty": {
+        "@id": "estrf:TrafficIntensity",
+        "@type": "ssn:Property",
+        "ssn:isPropertyOf": "URI-sensor"
+    },
+    "ssn:featureOfInterest": {
+        "@id":"URI-TramoVia",
+        "@type":"escjr:TramoVia"
+    },
+    "ssn:observationResult": {
+        "@id": "URI-observacion/output",
+        "@type": "estrf:TrafficIntensitySensorOutput",
+        "ssn:isProducedBy": "URI-Sensor",
+        "ssn:hasValue": {
+            "@id":"URI-observacion/value",
+            "@type":"estrf:TrafficIntensityObservationValue",
+            "estrnttp:validationType": "http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/intensidad/alta"
+        }
+    }
+}
+    </pre>
+

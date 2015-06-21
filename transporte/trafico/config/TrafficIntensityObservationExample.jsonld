@@ -1,0 +1,30 @@
+{
+    "@context": ["http://vocab.linkeddata.es/datosabiertos/def/external/ssn.json","http://vocab.linkeddata.es/datosabiertos/def/transporte/trafico.json"],
+    "@id": "URI-observacion",
+    "@type": "estrf:TrafficIntensityObservation",
+    "dcterms:title": "Observación del tramo de vía XXXXX en Validación de tarjeta 111222333 en 2015-06-21T09:30:30+02:00",
+    "ssn:observedBy": {
+        "@id":"URI-sensor",
+        "@type":"estrf:TrafficIntensitySensor"
+    },
+    "ssn:observationResultTime": "2015-06-21T09:30:30+02:00",
+    "ssn:observedProperty": {
+        "@id": "estrf:TrafficIntensity",
+        "@type": "ssn:Property",
+        "ssn:isPropertyOf": "URI-sensor"
+    },
+    "ssn:featureOfInterest": {
+        "@id":"URI-TramoVia",
+        "@type":"escjr:TramoVia"
+    },
+    "ssn:observationResult": {
+        "@id": "URI-observacion/output",
+        "@type": "estrf:TrafficIntensitySensorOutput",
+        "ssn:isProducedBy": "URI-Sensor",
+        "ssn:hasValue": {
+            "@id":"URI-observacion/value",
+            "@type":"estrf:TrafficIntensityObservationValue",
+            "estrnttp:validationType": "http://vocab.linkeddata.es/datosabiertos/kos/transporte/trafico/intensidad/alta"
+        }
+    }
+}
