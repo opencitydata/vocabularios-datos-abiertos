@@ -1,0 +1,37 @@
+{
+    "@context": {
+        "ssn": "http://purl.oclc.org/NET/ssnx/ssn#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "org": "http://www.w3.org/ns/org#",
+        "s": "http://schema.org/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "ssn:observationResult": {
+            "@type": "@id"
+        },
+        "ssn:observedBy": {
+            "@type": "@id"
+        },
+        "ssn:hasValue": {
+            "@type": "@id"
+        },
+        "ssn:observedProperty": {
+            "@type": "@id"
+        },
+        "ssn:isPropertyOf": {
+            "@type": "@id"
+        },
+        "ssn:featureOfInterest": {
+            "@type": "@id"
+        },
+        "ssn:isProducedBy": {
+            "@type": "@id"
+        },
+        "ssn:observationResultTime": {
+            "@type": "xsd:dateTime"
+        },
+        "ssn:observes": {
+            "@type": "@id"
+        }
+    }
+}
