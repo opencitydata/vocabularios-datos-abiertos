@@ -50,18 +50,17 @@
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-06-25</dcterms:issued>
         <dc:identifier rdf:datatype="&xsd;dateTime">http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento</dc:identifier>
         <dc:creator>José María Díez (Ayuntamiento de Burgos)</dc:creator>
+        <rdfs:comment>Vocabulario para la representación de datos de equipamientos de una ciudad. Este vocabulario ha sido desarrollado en el contexto del grupo CTN178 GT3.1 sobre datos abiertos y ciudades inteligentes. El estado del vocabulario es todavía muy inicial y sufrirá cambios, sobre todo relacionados con la inclusión de nuevos tipos de equipamientos que por sus características sea interesante incluir explícitamente.
+Reutiliza términos de varios vocabularios y modelos que actualmente se utilizan para propósitos similares (y por tanto se irá actualizando de acuerdo con la evolución de estos vocabularios), incluyendo:
+- schema.org
+- geoNames
+Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo suficiente sobre los términos que se incluyen en ella. </rdfs:comment>
         <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
         <dc:creator>Enrique Crespo (Ayuntamiento de Madrid)</dc:creator>
         <owl:versionInfo xml:lang="es">Esta es la versión inicial de la ontología sobre equipamientos que surge del trabajo del grupo de expertos del grupo de AENOR CTN178 GT3.1. De momento sólo incluye aparcamientos como un tipo especial de equipamiento, y progresivamente se irán incluyendo nuevos tipos de equipamientos.</owl:versionInfo>
         <dc:creator>Esther Minguela (Localidata)</dc:creator>
         <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)</dc:creator>
         <dc:creator>María Jesús Fernández Ruíz (Ayuntamiento de Zaragoza)</dc:creator>
-        <rdfs:comment>Vocabulario para la representación de datos de equipamientos de una ciudad. Este vocabulario ha sido desarrollado en el contexto del grupo CTN178 GT3.1 sobre datos abiertos y ciudades inteligentes. El estado del vocabulario es todavía muy inicial y sufrirá cambios, sobre todo relacionados con la inclusión de nuevos tipos de equipamientos que por sus características sea interesante incluir explícitamente.
-Reutiliza términos de varios vocabularios y modelos que actualmente se utilizan para propósitos similares (y por tanto se irá actualizando de acuerdo con la evolución de estos vocabularios), incluyendo:
-- schema.org
-- geoNames
-
-Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo suficiente sobre los términos que se incluyen en ella. </rdfs:comment>
         <dc:title xml:lang="es">Vocabulario para la representación de datos sobre equipamientos de una ciudad</dc:title>
         <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.html"/>
@@ -281,14 +280,14 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
         <rdfs:subClassOf rdf:resource="&schema;ParkingFacility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&geonames;featureClass"/>
-                <owl:hasValue rdf:resource="&geonames;S"/>
+                <owl:onProperty rdf:resource="&geonames;featureCode"/>
+                <owl:hasValue rdf:resource="&geonames;S.PKLT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&geonames;featureCode"/>
-                <owl:hasValue rdf:resource="&geonames;S.PKLT"/>
+                <owl:onProperty rdf:resource="&geonames;featureClass"/>
+                <owl:hasValue rdf:resource="&geonames;S"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-06-25</dcterms:issued>
