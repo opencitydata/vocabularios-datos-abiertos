@@ -1,0 +1,9 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "esequip:Aparcamiento" "schema:ParkingFacility" "schema:CivicStructure" "geonames:Feature" ; /*classes style*/
+	"esequip:Aparcamiento" -> "schema:ParkingFacility" [ label = "rdfs:subClassOf" ];
+	"esequip:Aparcamiento" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
+	"schema:ParkingFacility" -> "schema:CivicStructure" [ label = "rdfs:subClassOf" ];
+
+}
