@@ -1,0 +1,30 @@
+{
+  "@context": {
+    "espresup": "http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "espresup:creditoDefinitivo": {
+      "@type": "xsd:float"
+    },
+    "espresup:creditoPresupuestarioInicial": {
+      "@type": "xsd:float"
+    },
+    "espresup:gastoComprometido": {
+      "@type": "xsd:float"
+    },
+    "espresup:modificacionCreditoPresupuestario": {
+      "@type": "xsd:float"
+    },
+    "espresup:obligacionesPendientesPagoDiciembre": {
+      "@type": "xsd:float"
+    },
+    "espresup:remanentesCredito": {
+      "@type": "xsd:float"
+    },
+    "espresup:pagos": {
+      "@type": "xsd:float"
+    },
+    "espresup:obligacionesReconocidasNetas": {
+      "@type": "xsd:float"
+    }
+  }
+}
