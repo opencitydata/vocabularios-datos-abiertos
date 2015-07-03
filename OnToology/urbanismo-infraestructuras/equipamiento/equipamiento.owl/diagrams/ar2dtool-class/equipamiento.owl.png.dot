@@ -1,7 +1,7 @@
 digraph ar2dtool_diagram { 
 rankdir=LR;
 size="1501"
-node [shape = rectangle, color="orange"]; "skos:Concept" "schema:CivicStructure" "geonames:Feature" "-3c421830:14e5328407b:-7ffc" ; /*classes style*/
+node [shape = rectangle, color="orange"]; "skos:Concept" "schema:CivicStructure" "geonames:Feature" "-4dd31e3d:14e53ab79c6:-7ffc" ; /*classes style*/
 	"geonames:featureClass" -> "dcterms:type" [ label = "rdfs:subPropertyOf" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento/0.1" [ label = "owl:versionIRI" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento" -> "esequip:" [ label = "vann:preferredNamespaceUri" ];
@@ -9,11 +9,11 @@ node [shape = rectangle, color="orange"]; "skos:Concept" "schema:CivicStructure"
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.owl" [ label = "dcterms:hasFormat" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento.html" [ label = "dcterms:hasFormat" ];
 	"NULL" -> "geonames:featureCode" [ label = "owl:onProperty" ];
-	"NULL" -> "-3c421830:14e5328407b:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "-4dd31e3d:14e53ab79c6:-7ff9" [ label = "rdf:rest" ];
 	"NULL" -> "skos:Concept" [ label = "rdf:first" ];
 	"NULL" -> "geonames:S" [ label = "owl:hasValue" ];
 	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
-	"NULL" -> "-3c421830:14e5328407b:-7ffb" [ label = "owl:intersectionOf" ];
+	"NULL" -> "-4dd31e3d:14e53ab79c6:-7ffb" [ label = "owl:intersectionOf" ];
 	"NULL" -> "http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-equipamiento" [ label = "owl:hasValue" ];
 	"NULL" -> "geonames:featureClass" [ label = "owl:onProperty" ];
 	"NULL" -> "geonames:S.PKLT" [ label = "owl:hasValue" ];
@@ -23,6 +23,6 @@ node [shape = rectangle, color="orange"]; "skos:Concept" "schema:CivicStructure"
 	"schema:CivicStructure" -> "skos:Concept" [ label = "esequip:tipoAccesibilidad" ];
 	"schema:CivicStructure" -> "xsd:string" [ label = "esequip:titularidad" ];
 	"schema:CivicStructure" -> "xsd:boolean" [ label = "esequip:accesible" ];
-	"owl:Thing" -> "-3c421830:14e5328407b:-7ffc" [ label = "esequip:tipoEquipamiento" ];
+	"owl:Thing" -> "-4dd31e3d:14e53ab79c6:-7ffc" [ label = "esequip:tipoEquipamiento" ];
 
 }
