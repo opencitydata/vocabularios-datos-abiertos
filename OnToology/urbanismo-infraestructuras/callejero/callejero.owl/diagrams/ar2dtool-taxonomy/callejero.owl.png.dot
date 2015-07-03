@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "geonames:Feature" "escjr:Via" "escjr:TramoVia" "escjr:Portal" "schema:Place" ; /*classes style*/
+	"geonames:Feature" -> "schema:Place" [ label = "rdfs:subClassOf" ];
+	"escjr:Via" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
+	"escjr:Portal" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
+	"escjr:TramoVia" -> "geonames:Feature" [ label = "rdfs:subClassOf" ];
+
+}
