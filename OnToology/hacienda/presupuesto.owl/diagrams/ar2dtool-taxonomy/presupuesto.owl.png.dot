@@ -1,0 +1,14 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:GrupoProgramas" "base:GrupoClasificacionFuncional" "base:AreaGasto" "base:Articulo" "base:Pol?ticaGasto" "base:ProgramaGasto" "base:Capitulo" "base:Subconcepto" "base:GrupoClasificacionEconomica" "base:Concepto" ; /*classes style*/
+	"base:Pol?ticaGasto" -> "base:GrupoClasificacionFuncional" [ label = "rdfs:subClassOf" ];
+	"base:GrupoProgramas" -> "base:GrupoClasificacionFuncional" [ label = "rdfs:subClassOf" ];
+	"base:AreaGasto" -> "base:GrupoClasificacionFuncional" [ label = "rdfs:subClassOf" ];
+	"base:Concepto" -> "base:GrupoClasificacionEconomica" [ label = "rdfs:subClassOf" ];
+	"base:ProgramaGasto" -> "base:GrupoClasificacionFuncional" [ label = "rdfs:subClassOf" ];
+	"base:Subconcepto" -> "base:GrupoClasificacionEconomica" [ label = "rdfs:subClassOf" ];
+	"base:Articulo" -> "base:GrupoClasificacionEconomica" [ label = "rdfs:subClassOf" ];
+	"base:Capitulo" -> "base:GrupoClasificacionEconomica" [ label = "rdfs:subClassOf" ];
+
+}
