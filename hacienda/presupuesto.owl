@@ -5,7 +5,6 @@
     <!ENTITY schema "http://schema.org/" >
     <!ENTITY dcterms "http://purl.org/dc/terms/" >
     <!ENTITY vann "http://purl.org/vocab/vann/" >
-    <!ENTITY dbpedia-owl "http://dbpedia.org/ontology/" >
     <!ENTITY dctype "http://purl.org/dc/dcmitype/" >
     <!ENTITY cc "http://creativecommons.org/ns#" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
@@ -24,7 +23,6 @@
 <rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#"
      xml:base="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:dbpedia-owl="http://dbpedia.org/ontology/"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
      xmlns:geonames="http://www.geonames.org/ontology#"
