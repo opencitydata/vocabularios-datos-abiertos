@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html prefix="dc: http://purl.org/dc/terms/ schema: http://schema.org/ prov: http://www.w3.org/ns/prov# foaf: http://xmlns.com/foaf/0.1/ owl: http://www.w3.org/2002/07/owl#">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />   <script src="resources/jquery.js"></script> 
+    <script> 
+function loadHash() {
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+		$('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+	}
+}    $(function(){
+      $("#abstract").load("sections/abstract.html"); 
+      $("#introduction").load("sections/introduction.html"); 
+      $("#overview").load("sections/overview.html"); 
+      $("#description").load("sections/description.html"); 
+      $("#crossref").load("sections/crossref.html", null, loadHash); 
+      $("#references").load("sections/references.html"); 
+    });
+    </script> 
+  </head> 
+
+<body resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#" typeOf="owl:Ontology schema:TechArticle">
+<span resource="" typeOf="foaf:Document schema:WebPage">
+<span property="dc:contributor prov:wasAttributedTo schema:contributor" resource="http://purl.org/net/dgarijo"></span>
+</span>
+<div class="head">
+<h1 property="dc:title schema:name">Vocabulario para la representación de datos sobre equipamientos de una ciudad</h1>
+<dt>Revision</dt>
+<dd property="schema:version">Esta es la versión inicial de la ontología sobre equipamientos que surge del trabajo del grupo de expertos del grupo de AENOR CTN178 GT3.1. De momento sólo incluye aparcamientos como un tipo especial de equipamiento, y progresivamente se irán incluyendo nuevos tipos de equipamientos.</dd>
+<dl><dt>Authors:</dt>
+<dd>José María Díez (Ayuntamiento de Burgos)</dd><dd>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)</dd><dd>Esther Minguela (Localidata)</dd><dd>María Jesús Fernández Ruíz (Ayuntamiento de Zaragoza)</dd><dd>Enrique Crespo (Ayuntamiento de Madrid)</dd></dl>
+
+<dl>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons CC-BY</a>.</dl>
+<span property="dc:license" resource="http://creativecommons.org/licenses/by/4.0/"></span>
+<hr/>
+</div>
+     <div id="abstract"></div>
+<div id="toc"><h2>Table of Contents</h2>
+<ul>
+<li><a href="#introduction">1. Introduction</a></li>
+<ul><li><a href="#namespacedeclarations">1.1 Namespace declarations</a></li></ul>
+<li><a href="#overview">2. [Ontology Name] Overview</a></li>
+<li><a href="#description">3. [Ontology Name] Description</a></li>
+<li><a href="#crossref">4. Cross reference for [Ontology Name] classes, properties and dataproperties</a></li>
+<ul>
+<li><a href="#classes">4.1 Classes</a></li>
+<li><a href="#objectproperties">4.2 Object Properties</a></li>
+        <li><a href="#dataproperties">4.3 Data Properties</a></li>
+        <li><a href="#namedindividuals">4.4 Named Individuals</a></li>
+</ul>
+<li><a href="#references">5. References</a></li>
+<li><a href="#acknowledgements">6. Acknowledgements</a></li>
+</ul>
+</div>
+     <div id="introduction"></div>
+     <div id="overview"></div>
+     <div id="description"></div>
+     <div id="crossref"></div>
+     <div id="references"></div>
+<div id="acknowledgements">
+<h2>6. Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<p>The authors would like to thank <a href="http://palindrom.es/phd/whoami/">Silvio Peroni</a> for developing <a href="http://www.essepuntato.it/lode">LODE</a>, a Live OWL Documentation Environment, which is used for representing the Cross Referencing Section of this document and <a href="http://delicias.dia.fi.upm.es/members/dgarijo/">Daniel Garijo</a> for developing the script used to create the document template.</p>
+</div>
+</body> 
+</html>
