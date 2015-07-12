@@ -1,11 +1,14 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<..\index.html> a prov:Entity;
-	 dc:title "Vocabulario para la representación de datos sobre equipamientos de una ciudad";
-	 prov:wasAttributedTo [ a prov:Agent; foaf:name "José María Díez (Ayuntamiento de Burgos)".];
-	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)".];
-	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Esther Minguela (Localidata)".];
-	 prov:wasAttributedTo [ a prov:Agent; foaf:name "María Jesús Fernández Ruíz (Ayuntamiento de Zaragoza)".];
-	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Enrique Crespo (Ayuntamiento de Madrid)".];
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento/0.1> a prov:Entity;
+	 dc:title "Vocabulario para la representación de equipamientos";
+	 prov:wasAttributedTo <http://www.linkedin.com/in/ocorcho>;
+	 dc:creator <http://www.linkedin.com/in/ocorcho>;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Esther Minguela".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "José María Díez".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Enrique Crespo".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "María Jesús Fernández Ruíz".];
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento>;
+	 prov:wasGeneratedAt "25 Junio 2015".
