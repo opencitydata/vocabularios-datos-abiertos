@@ -1,0 +1,44 @@
+{
+  "@context": {
+    "espresup": "http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "espresup:creditoDefinitivo": {
+      "@type": "xsd:float"
+    },
+    "espresup:creditoPresupuestarioInicial": {
+      "@type": "xsd:float"
+    },
+    "espresup:gastoComprometido": {
+      "@type": "xsd:float"
+    },
+    "espresup:modificacionCreditoPresupuestario": {
+      "@type": "xsd:float"
+    },
+    "espresup:obligacionesPendientesPagoDiciembre": {
+      "@type": "xsd:float"
+    },
+    "espresup:remanentesCredito": {
+      "@type": "xsd:float"
+    },
+    "espresup:pagos": {
+      "@type": "xsd:float"
+    },
+    "espresup:obligacionesReconocidasNetas": {
+      "@type": "xsd:float"
+    }
+  },
+  "@id": "http://datos.alcobendas.es/recurso/hacienda/presupuestos/gasto/2014/00001",
+  "@type": "espresup:Gasto",
+  "rdfs:label": "observación del 5 de gastos",
+  "espresup:clasificacionEconomica": "http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuestos/gastos/5",
+  "espresup:año": "2014",
+  "espresup:trimestre": "2014-Q3",
+  "espresup:creditoDefinitivo": "2002.55",
+  "espresup:creditoPresupuestarioInicial": "2003.55",
+  "espresup:gastoComprometido": "2004.55",
+  "espresup:modificacionCreditoPresupuestario": "2005.55",
+  "espresup:obligacionesPendientesPagoDiciembre": "2006.55",
+  "espresup:remanentesCredito": "2006.55",
+  "espresup:pagos": "2006.55",
+  "espresup:obligacionesReconocidasNetas": "2006.55"
+}

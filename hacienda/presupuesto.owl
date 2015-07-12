@@ -9,10 +9,8 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY owl2 "http://www.w3.org/2006/12/owl2#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY geonames "http://www.geonames.org/ontology#" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY skos "http://www.w3.org/2004/02/skos/core#" >
-    <!ENTITY geosparql "http://www.opengis.net/ont/geosparql#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY esadm "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#" >
@@ -24,11 +22,9 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:owl2="http://www.w3.org/2006/12/owl2#"
-     xmlns:geonames="http://www.geonames.org/ontology#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
-     xmlns:geosparql="http://www.opengis.net/ont/geosparql#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:esadm="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#"
      xmlns:dctype="http://purl.org/dc/dcmitype/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
