@@ -68,10 +68,10 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#"/>
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento/0.1"/>
     </owl:Ontology>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -79,34 +79,34 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="&dcterms;issued"/>
-
+    
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-
+    
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
     <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
-
+    
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -114,7 +114,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://geonames.org/ontology#featureClass -->
@@ -122,7 +122,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     <owl:ObjectProperty rdf:about="&geonames;featureClass">
         <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://geonames.org/ontology#featureCode -->
@@ -130,13 +130,13 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     <owl:ObjectProperty rdf:about="&geonames;featureCode">
         <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://purl.org/dc/terms/type -->
 
     <owl:ObjectProperty rdf:about="&dcterms;type"/>
-
+    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#numPlazas -->
@@ -149,7 +149,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
         <rdfs:domain rdf:resource="&schema;CivicStructure"/>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoAccesibilidad -->
@@ -162,7 +162,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento"/>
         <rdfs:range rdf:resource="&skos;Concept"/>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#tipoEquipamiento -->
@@ -184,16 +184,16 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
             </owl:Class>
         </rdfs:range>
     </owl:ObjectProperty>
-
+    
 
 
     <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
 
     <owl:ObjectProperty rdf:about="&skos;inScheme"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -201,7 +201,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#accesible -->
@@ -214,7 +214,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento"/>
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#modoAcceso -->
@@ -225,7 +225,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
         <rdfs:comment xml:lang="es">descripción sobre la forma de acceder al equipamiento</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento"/>
     </owl:DatatypeProperty>
-
+    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#titularidad -->
@@ -235,13 +235,13 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-06-25</dcterms:issued>
         <rdfs:comment xml:lang="es">Titularidad del equipamiento.  De momento se sugiere representar esta información mediante una cadena de caracteres, con valores como público, privado, mixto, aunque probablemente se utilice finalmente una clasificación SKOS desarrollada al efecto.</rdfs:comment>
         <rdfs:domain rdf:resource="&schema;CivicStructure"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/turismo/lugar"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -249,19 +249,19 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://geonames.org/ontology#Feature -->
 
     <owl:Class rdf:about="&geonames;Feature"/>
-
+    
 
 
     <!-- http://schema.org/CivicStructure -->
 
     <owl:Class rdf:about="&schema;CivicStructure"/>
-
+    
 
 
     <!-- http://schema.org/ParkingFacility -->
@@ -269,7 +269,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     <owl:Class rdf:about="&schema;ParkingFacility">
         <rdfs:subClassOf rdf:resource="&schema;CivicStructure"/>
     </owl:Class>
-
+    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento#Aparcamiento -->
@@ -280,36 +280,36 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
         <rdfs:subClassOf rdf:resource="&schema;ParkingFacility"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&geonames;featureCode"/>
-                <owl:hasValue rdf:resource="&geonames;S.PKLT"/>
+                <owl:onProperty rdf:resource="&geonames;featureClass"/>
+                <owl:hasValue rdf:resource="&geonames;S"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&geonames;featureClass"/>
-                <owl:hasValue rdf:resource="&geonames;S"/>
+                <owl:onProperty rdf:resource="&geonames;featureCode"/>
+                <owl:hasValue rdf:resource="&geonames;S.PKLT"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-06-25</dcterms:issued>
         <rdfs:comment xml:lang="es">Aparcamiento de cualquier tipo (público, privado, en superficie, etc.) que se puede encontrar en una ciudad.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/equipamiento"/>
     </owl:Class>
-
+    
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="&skos;Concept"/>
-
+    
 
 
     <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
 
     <owl:Class rdf:about="&skos;ConceptScheme"/>
+    
 
 
-
-    <!--
+    <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -317,7 +317,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-
+    
 
 
     <!-- http://geonames.org/ontology#S -->
@@ -325,7 +325,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     <owl:Thing rdf:about="&geonames;S">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </owl:Thing>
-
+    
 
 
     <!-- http://geonames.org/ontology#S.PKLT -->
@@ -333,7 +333,7 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
     <owl:Thing rdf:about="&geonames;S.PKLT">
         <rdf:type rdf:resource="&owl;NamedIndividual"/>
     </owl:Thing>
-
+    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-equipamiento -->
@@ -352,3 +352,4 @@ Este vocabulario sufrirá cambios continuados hasta que se consiga un acuerdo su
 
 
 <!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
