@@ -114,7 +114,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">área de gasto</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Área de gasto a la que pertenece un determinado gasto. </rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#AreaGasto"/>
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionFuncional"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
@@ -128,7 +128,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">artículo</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Artículo al que corresponde el gasto o ingreso, que pertenece a un capítulo de gasto o ingreso</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Articulo"/>
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionEconomica"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
@@ -143,7 +143,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">capítulo</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Capítulo económico de gasto o ingreso. Se distinguen las operaciones no financieras (capítulos de gasto 1 a 7) de las financieras (capítulos de gasto 8 y 9), subdividiéndose las primeras en operaciones corrientes (capítulos de gasto 1 a 4) y de capital (capítulos 6 y 7).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Capitulo"/>
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionEconomica"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
@@ -157,9 +157,9 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionEconomica">
         <rdfs:label xml:lang="es">clasificación económica</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
-        <rdfs:comment xml:lang="es">Clasificación económica a la que pertenece un gasto o un ingreso, de acuerdo con uno de los dos siguientes esquemas de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuestos/tipoIngreso, http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuestos/tipoGastoEconomico</rdfs:comment>
+        <rdfs:comment xml:lang="es">Clasificación económica a la que pertenece un gasto o un ingreso, de acuerdo con uno de los dos siguientes esquemas de conceptos: http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/tipoIngreso, http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/tipoGastoEconomico</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaIngresos.html"/>
         <rdfs:range rdf:resource="&skos;Concept"/>
@@ -172,9 +172,9 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionFuncional">
         <rdfs:label xml:lang="es">clasificación funcional</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
-        <rdfs:comment xml:lang="es">Clasificación funcional (también denominada por programas del gasto) a la que pertenece un gasto, de acuerdo con el siguiente esquema de conceptos:  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuestos/tipoGastoFuncional</rdfs:comment>
+        <rdfs:comment xml:lang="es">Clasificación funcional (también denominada por programas del gasto) a la que pertenece un gasto, de acuerdo con el siguiente esquema de conceptos:  http://vocab.linkeddata.es/datosabiertos/kos/hacienda/presupuesto/tipoGastoFuncional</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
         <rdfs:range rdf:resource="&skos;Concept"/>
     </owl:ObjectProperty>
@@ -187,7 +187,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">concepto</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Concepto al que corresponde el gasto o ingreso, que pertenece a un artículo y a un capítulo de gasto o ingreso</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Concepto"/>
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionEconomica"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
@@ -202,7 +202,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">grupo de programas de gasto</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Grupo de programas al que corresponde un gasto, que pertenece a una política de gasto y a un área de gasto.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoProgramas"/>
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionFuncional"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
@@ -216,7 +216,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">política de gasto</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Política de gasto al que corresponde el gasto, que pertenece a un área de gasto</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#PolíticaGasto"/>
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionFuncional"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
@@ -230,7 +230,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">programa de gasto</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Programa al que corresponde un gasto, que pertenece a un grupo de programas, a una política de gasto y a un área de gasto.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#ProgramaGasto"/>
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionFuncional"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
@@ -244,7 +244,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">subconcepto</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Subconcepto al que corresponde el gasto o ingreso, que pertenece a un artículo y a un capítulo de gasto o ingreso</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Subconcepto"/>
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#clasificacionEconomica"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
@@ -285,7 +285,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#año">
         <rdfs:label xml:lang="es">año</rdfs:label>
         <rdfs:comment xml:lang="es">Año en el que se presupuesta y realiza el gasto o ingreso</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkedata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkedata.es/datosabiertos/def/hacienda/presupuesto"/>
     </owl:DatatypeProperty>
     
 
@@ -295,7 +295,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#creditoDefinitivo">
         <rdfs:label xml:lang="es">crédito definitivo</rdfs:label>
         <rdfs:comment xml:lang="es">Crédito definitivo</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Gasto"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -307,7 +307,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#creditoPresupuestarioInicial">
         <rdfs:label xml:lang="es">crédito presupuestario inicial</rdfs:label>
         <rdfs:comment xml:lang="es">Crédito presupuestario inicial</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Gasto"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -319,7 +319,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#derechosAnulados">
         <rdfs:label xml:lang="es">derechos anulados</rdfs:label>
         <rdfs:comment xml:lang="es">Derechos anulados</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -331,7 +331,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#derechosCancelados">
         <rdfs:label xml:lang="es">derechos cancelados</rdfs:label>
         <rdfs:comment xml:lang="es">Derechos cancelados</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -343,7 +343,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#derechosPendientesCobro">
         <rdfs:label xml:lang="es">derechos pendientes de cobro</rdfs:label>
         <rdfs:comment xml:lang="es">Derechos pendientes de cobro</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -355,7 +355,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#derechosReconocidos">
         <rdfs:label xml:lang="es">derechos reconocidos</rdfs:label>
         <rdfs:comment xml:lang="es">Derechos reconocidos</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -367,7 +367,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#derechosReconocidosNetos">
         <rdfs:label xml:lang="es">derechos reconocidos netos</rdfs:label>
         <rdfs:comment xml:lang="es">Derechos reconocidos netos</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -379,7 +379,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#gastoComprometido">
         <rdfs:label xml:lang="es">gasto comprometido</rdfs:label>
         <rdfs:comment xml:lang="es">Gasto comprometido</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Gasto"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -391,7 +391,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#gradoRealizacion">
         <rdfs:label xml:lang="es">grado de realización</rdfs:label>
         <rdfs:comment xml:lang="es">Grado de realización del ingreso</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -403,7 +403,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#modificacionCreditoPresupuestario">
         <rdfs:label xml:lang="es">modificación de crédito presupuestario</rdfs:label>
         <rdfs:comment xml:lang="es">Modificación de crédito presupuestario</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Gasto"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -415,7 +415,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#modificacionPrevisionPresupuestaria">
         <rdfs:label xml:lang="es">modificación de previsión presupuestaria</rdfs:label>
         <rdfs:comment xml:lang="es">Modificación de previsión presupuestaria</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -427,7 +427,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#obligacionesPendientesPagoDiciembre">
         <rdfs:label xml:lang="es">obligaciones pendientes de pago a 31 de diciembre</rdfs:label>
         <rdfs:comment xml:lang="es">Obligaciones pendientes de pago a 31 de diciembre</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Gasto"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -439,7 +439,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#obligacionesReconocidasNetas">
         <rdfs:label xml:lang="es">obligaciones reconocidas netas</rdfs:label>
         <rdfs:comment xml:lang="es">Obligaciones reconocidas netas</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Gasto"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -451,7 +451,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#pagos">
         <rdfs:label xml:lang="es">pagos</rdfs:label>
         <rdfs:comment xml:lang="es">Pagos</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Gasto"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -463,7 +463,19 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#previsionPresupuestariaInicial">
         <rdfs:label xml:lang="es">previsión presupuestaria inicial</rdfs:label>
         <rdfs:comment xml:lang="es">Previsión presupuestaria inicial</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#provisionPresupuestariaDefinitiva -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#provisionPresupuestariaDefinitiva">
+        <rdfs:label xml:lang="es">provisión presupuestaria definitiva</rdfs:label>
+        <rdfs:comment xml:lang="es">provisión presupuestaria definitiva</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -475,7 +487,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#recaudacionNeta">
         <rdfs:label xml:lang="es">recaudación neta</rdfs:label>
         <rdfs:comment xml:lang="es">Recaudación neta</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Ingreso"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -487,7 +499,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#remanentesCredito">
         <rdfs:label xml:lang="es">remanentes de crédito</rdfs:label>
         <rdfs:comment xml:lang="es">Remanentes de crédito</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#Gasto"/>
         <rdfs:range rdf:resource="&xsd;float"/>
     </owl:DatatypeProperty>
@@ -499,7 +511,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#trimestre">
         <rdfs:label xml:lang="es">trimestre</rdfs:label>
         <rdfs:comment xml:lang="es">Trimestre al que pertenece la información proporcionada. Se recomienda el uso de la siguiente nomenclatura: YYYY-QN, donde N es un dígito del 1 al 4, que representa el trimestre.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkedata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkedata.es/datosabiertos/def/hacienda/presupuesto"/>
     </owl:DatatypeProperty>
     
 
@@ -521,7 +533,7 @@ Esta ontología podrá sufrir cambios hasta que se consiga un acuerdo suficiente
         <rdfs:label xml:lang="es">Area de gasto</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoClasificacionFuncional"/>
         <dcterms:issued>2015-01-31</dcterms:issued>
-        <rdfs:comment xml:lang="es">El área de gasto es el más alto de los conceptos que se utilizan para organizar la estructura funcional (o por programas) de los gastos de una entidad local. 
+        <rdfs:comment xml:lang="es">El área de gasto es el más alto de los conceptos que se utilizan para organizar la estructura funcional (o por programas) de los gastos de una entidad local.
 
 Se dividen en las siguientes:
 Área de gasto 0: “Deuda pública”. Comprende los gastos de intereses y amortización de la Deuda Pública y demás operaciones financieras de naturaleza análoga, con exclusión de los gastos que ocasione la formalización de las mismas.
@@ -531,7 +543,7 @@ Se dividen en las siguientes:
 Área de gasto 4. “Actuaciones de carácter económico”: Se integran en esta área los gastos de actividades, servicios y transferencias que tienden a desarrollar el potencial de los distintos sectores de la actividad económica.Se incluirán también los gastos en infraestructuras básicas y de transportes; infraestructuras agrarias; comunicaciones; investigación, desarrollo e innovación
 Área de gasto 9. “Actuaciones de carácter general”: Se incluyen en esta área los gastos relativos a actividades que afecten, con carácter general, a la Entidad local, y que consistan en el ejercicio de funciones de gobierno o de apoyo administrativo y de soporte lógico y técnico a toda la organización.
 Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni aplicados directamente a otra área de las previstas en esta clasificación por programas.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
     </owl:Class>
     
@@ -544,7 +556,7 @@ Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni apl
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoClasificacionEconomica"/>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">El artículo pertenece al segundo nivel de los conceptos que se utilizan para organizar la estructura económica de los gastos de una entidad local, por debajo del capítulo.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaIngresos.html"/>
     </owl:Class>
@@ -558,7 +570,7 @@ Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni apl
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoClasificacionEconomica"/>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">El capítulo es el más alto de los conceptos que se utilizan para organizar la estructura económica de los gastos de una entidad local. Por ejemplo, se distinguen las operaciones no financieras (capítulos de gasto 1 a 7) de las financieras (capítulos de gasto 8 y 9), subdividiéndose las primeras en operaciones corrientes (capítulos de gasto 1 a 4) y de capital (capítulos 6 y 7).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaIngresos.html"/>
     </owl:Class>
@@ -572,7 +584,7 @@ Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni apl
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoClasificacionEconomica"/>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">El concepto pertenece al tercer nivel de los conceptos que se utilizan para organizar la estructura económica de los gastos de una entidad local, por debajo del capítulo y artículo.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaIngresos.html"/>
     </owl:Class>
@@ -585,7 +597,7 @@ Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni apl
         <rdfs:label xml:lang="es">Gasto</rdfs:label>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Las Entidades locales tienen limitado el destino de sus gastos, debiendo atender las finalidades previstas en su presupuesto anual que debe ser aprobado por el Pleno. Están obligadas a prestar determinados servicios en función del número de habitantes, y en todo caso: alumbrado público, cementerio, recogida de residuos, limpieza viaria, abastecimiento domiciliario de agua potable, alcantarillado, acceso a los núcleos de población, pavimentación de las vías públicas y control de alimentos y bebidas. La realización de los distintos gastos debe respetar el presupuesto y unas fases señaladas en la Ley.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
     </owl:Class>
     
 
@@ -596,7 +608,7 @@ Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni apl
         <rdfs:label xml:lang="es">Grupo de clasificación económica</rdfs:label>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Esta clase abstracta se utiliza para agrupar las clases que permiten representar la estructura económica de los gastos o ingresos de una entidad local. La clasificación económica se divide en tres niveles, el primero es el capítulo, el segundo el artículo y el tercero el concepto. Además, cada concepto podrá dividirse en subconceptos, el grado de desagregación en la información varía entre unas Entidades locales u otras, pero todas ellas deben dar la información como mínimo a nivel de artículo.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaIngresos.html"/>
     </owl:Class>
@@ -609,7 +621,7 @@ Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni apl
         <rdfs:label xml:lang="es">Grupo de clasificación funcional</rdfs:label>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">Esta clase abstracta se utiliza para agrupar las clases que permiten representar la estructura funcional (o de programa) de los gastos de una entidad local. Un programa estará formado por un conjunto de créditos presupuestarios que tienen un mismo objetivo o finalidad, es decir, el programa informará del importe del gasto necesario para realizar una determinada actividad pública. La clasificación por programas presenta una estructura en la que el nivel más agregado de información son las áreas de gasto, cada una de ellas se divide en políticas de gasto, a su vez cada política de gasto se desagrega en grupos de programas y cada grupo de programas está formado por programas.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
     </owl:Class>
     
@@ -622,7 +634,7 @@ Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni apl
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoClasificacionFuncional"/>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">El grupo de programas es el tercero de los niveles que se utilizan para organizar la estructura funcional (o por programas) de los gastos de una entidad local, por debajo del área de gasto y la política de gasto.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
     </owl:Class>
     
@@ -636,7 +648,7 @@ Recogerá los gastos generales de la Entidad, que no puedan ser imputados ni apl
         <rdfs:comment xml:lang="es">El presupuesto de ingresos de una Entidad local está formado por la previsión de los recursos que la entidad espera obtener en el año para financiar los gastos que figuran en el presupuesto de gastos.
 Los importes que figuran en el presupuesto de ingresos se denominan créditos del presupuesto de ingresos y son una estimación o previsión, a diferencia del presupuesto de gastos que suponen el límite de una autorización para gastar.
 Esta diferencia es importante, puesto que si en la ejecución del presupuesto de gastos los importes consignados no se pueden sobrepasar, excepto con las salvedades que establece la normativa, la ejecución del presupuesto de ingresos se realizará por la cantidad que efectivamente se obtenga en el año, con independencia de la cantidad que se haya previsto obtener en el presupuesto inicial.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
     </owl:Class>
     
 
@@ -648,7 +660,7 @@ Esta diferencia es importante, puesto que si en la ejecución del presupuesto de
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoClasificacionFuncional"/>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">La política de gasto es el segundo de los niveles que se utilizan para organizar la estructura funcional (o por programas) de los gastos de una entidad local, por debajo del área de gasto.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
     </owl:Class>
     
@@ -661,7 +673,7 @@ Esta diferencia es importante, puesto que si en la ejecución del presupuesto de
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoClasificacionFuncional"/>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">El programa de gasto es el cuarto de los niveles que se utilizan para organizar la estructura funcional (o por programas) de los gastos de una entidad local, por debajo del área de gasto, la política de gasto y el grupo de programas.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionProgramaGasto.html"/>
     </owl:Class>
     
@@ -674,7 +686,7 @@ Esta diferencia es importante, puesto que si en la ejecución del presupuesto de
         <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto#GrupoClasificacionEconomica"/>
         <dcterms:issued>2015-01-31</dcterms:issued>
         <rdfs:comment xml:lang="es">El subconcepto pertenece al cuarto nivel de los conceptos que se utilizan para organizar la estructura económica de los gastos de una entidad local, por debajo del capítulo. artículo y concepto.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuestos"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/hacienda/presupuesto"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaGasto.html"/>
         <rdfs:seeAlso rdf:resource="http://www.rendiciondecuentas.es/es/informaciongeneral/presupuestoentidades/ClasificacionEconomicaIngresos.html"/>
     </owl:Class>
