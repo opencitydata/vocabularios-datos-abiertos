@@ -1,0 +1,182 @@
+{
+  "@context" : {
+    "qb": "http://purl.org/linked-data/cube#",
+    "qb:AttributeProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#AttributeProperty"
+    },
+    "qb:modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "qb:dimension" : {
+      "@id" : "http://purl.org/linked-data/cube#dimension",
+      "@type" : "@id"
+    },
+    "qb:componentRequired" : {
+      "@id" : "http://purl.org/linked-data/cube#componentRequired",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "qb:componentAttachment" : {
+      "@id" : "http://purl.org/linked-data/cube#componentAttachment",
+      "@type" : "@id"
+    },
+    "qb:ObservationGroup" : {
+      "@id" : "http://purl.org/linked-data/cube#ObservationGroup"
+    },
+    "qb:Dataset" : {
+      "@id" : "http://purl.org/NET/scovo#Dataset"
+    },
+    "qb:Attachable" : {
+      "@id" : "http://purl.org/linked-data/cube#Attachable"
+    },
+    "qb:contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "qb:MeasureProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#MeasureProperty"
+    },
+    "qb:attribute" : {
+      "@id" : "http://purl.org/linked-data/cube#attribute",
+      "@type" : "@id"
+    },
+    "qb:concept" : {
+      "@id" : "http://purl.org/linked-data/cube#concept",
+      "@type" : "@id"
+    },
+    "qb:codeList" : {
+      "@id" : "http://purl.org/linked-data/cube#codeList",
+      "@type" : "@id"
+    },
+    "qb:isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "qb:Item" : {
+      "@id" : "http://purl.org/NET/scovo#Item"
+    },
+    "qb:structure" : {
+      "@id" : "http://purl.org/linked-data/cube#structure",
+      "@type" : "@id"
+    },
+    "qb:measureDimension" : {
+      "@id" : "http://purl.org/linked-data/cube#measureDimension",
+      "@type" : "@id"
+    },
+    "qb:Property" : {
+      "@id" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"
+    },
+    "qb:sliceStructure" : {
+      "@id" : "http://purl.org/linked-data/cube#sliceStructure",
+      "@type" : "@id"
+    },
+    "qb:label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "qb:license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "qb:Observation" : {
+      "@id" : "http://purl.org/linked-data/cube#Observation"
+    },
+    "qb:DataStructureDefinition" : {
+      "@id" : "http://purl.org/linked-data/cube#DataStructureDefinition"
+    },
+    "qb:SliceKey" : {
+      "@id" : "http://purl.org/linked-data/cube#SliceKey"
+    },
+    "qb:dataSet" : {
+      "@id" : "http://purl.org/linked-data/cube#dataSet",
+      "@type" : "@id"
+    },
+    "qb:measureType" : {
+      "@id" : "http://purl.org/linked-data/cube#measureType",
+      "@type" : "@id"
+    },
+    "qb:parentChildProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#parentChildProperty",
+      "@type" : "@id"
+    },
+    "qb:HierarchicalCodeList" : {
+      "@id" : "http://purl.org/linked-data/cube#HierarchicalCodeList"
+    },
+    "qb:ComponentSet" : {
+      "@id" : "http://purl.org/linked-data/cube#ComponentSet"
+    },
+    "qb:order" : {
+      "@id" : "http://purl.org/linked-data/cube#order",
+      "@type" : "http://www.w3.org/2001/XMLSchema#int"
+    },
+    "qb:observation" : {
+      "@id" : "http://purl.org/linked-data/cube#observation",
+      "@type" : "@id"
+    },
+    "qb:CodedProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#CodedProperty"
+    },
+    "qb:Slice" : {
+      "@id" : "http://purl.org/linked-data/cube#Slice"
+    },
+    "qb:observationGroup" : {
+      "@id" : "http://purl.org/linked-data/cube#observationGroup",
+      "@type" : "@id"
+    },
+    "qb:comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "qb:hierarchyRoot" : {
+      "@id" : "http://purl.org/linked-data/cube#hierarchyRoot",
+      "@type" : "@id"
+    },
+    "qb:component" : {
+      "@id" : "http://purl.org/linked-data/cube#component",
+      "@type" : "@id"
+    },
+    "qb:ConceptScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#ConceptScheme"
+    },
+    "qb:created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "qb:Collection" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Collection"
+    },
+    "qb:sliceKey" : {
+      "@id" : "http://purl.org/linked-data/cube#sliceKey",
+      "@type" : "@id"
+    },
+    "qb:slice" : {
+      "@id" : "http://purl.org/linked-data/cube#slice",
+      "@type" : "@id"
+    },
+    "qb:ComponentSpecification" : {
+      "@id" : "http://purl.org/linked-data/cube#ComponentSpecification"
+    },
+    "qb:Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "qb:title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "qb:versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "qb:measure" : {
+      "@id" : "http://purl.org/linked-data/cube#measure",
+      "@type" : "@id"
+    },
+    "qb:DataSet" : {
+      "@id" : "http://purl.org/linked-data/cube#DataSet"
+    },
+    "qb:Class" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Class"
+    },
+    "qb:componentProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#componentProperty",
+      "@type" : "@id"
+    },
+    "qb:DimensionProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#DimensionProperty"
+    },
+    "qb:ComponentProperty" : {
+      "@id" : "http://purl.org/linked-data/cube#ComponentProperty"
+    }
+  }
+}
